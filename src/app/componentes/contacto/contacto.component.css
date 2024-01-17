@@ -1,0 +1,21 @@
+.formulario{
+    padding: 3rem;
+    margin-top: 3rem
+}
+
+
+@media (min-width:765px){
+    .mb-3{
+        width: 100%;
+    }
+    .datos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* 
+    .form-group{
+        text-align: center;
+    } 
+    */
+}
+
