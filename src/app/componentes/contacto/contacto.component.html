@@ -1,51 +1,40 @@
 <app-cabecero></app-cabecero>
 
-
-<form class = "formulario">
+<h2 class="titulo">Contactanos</h2>
+<form [formGroup]= "datos"  class = "formulario">
     <div class="datos">
         <div class="form-row">
             <div class="col-md-4 mb-3">
-            <label for="validationDefault01">First name</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+                <label for="validationDefault01">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" formControlName="nombre" required >
             </div>
             <div class="col-md-4 mb-3">
-            <label for="validationDefault02">Last name</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+                <label for="validationDefault02">Apellido</label>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="Apellidos" formControlName="apellidos" required>
             </div>
             <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Asunto</label>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="Asunto" formControlName="asunto" required>
+            </div>
+            <!-- <div class="col-md-4 mb-3">
             <label for="validationDefaultUsername">Username</label>
             <div class="input-group">
                 <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroupPrepend2">@</span>
                 </div>
-                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Correo" formControlName="correo" aria-describedby="inputGroupPrepend2" required>
             </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-            <label for="validationDefault03">City</label>
-            <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-            </div>
-            <div class="col-md-3 mb-3">
-            <label for="validationDefault04">State</label>
-            <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-            </div>
-            <div class="col-md-3 mb-3">
-            <label for="validationDefault05">Zip</label>
-            <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+            </div> -->
+
+            <div class="col-md-4 mb-3 mensaje">
+                <label for="validationDefault02">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" formControlName="mensaje" required></textarea>
             </div>
         </div>
     </div>
 
-    <div class="form-group">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-            <label class="form-check-label" for="invalidCheck2">
-                Agree to terms and conditions
-            </label>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
+    <div class="form-group botonCorreo">
+        <button (click)=enviarCoreo() class=" btn btn-primary" type="submit">Enviar Correo</button>
     </div>
     
 </form>

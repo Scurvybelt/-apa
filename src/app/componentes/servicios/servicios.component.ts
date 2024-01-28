@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import AOS from 'aos';
 
 @Component({
-  selector: 'app-productos',
-  templateUrl: './productos.component.html',
-  styleUrls: ['./productos.component.css']
+  selector: 'app-servicios',
+  templateUrl: './servicios.component.html',
+  styleUrls: ['./servicios.component.css']
 })
-export class ProductosComponent {
+export class ServiciosComponent {
 
   constructor(){
 
@@ -15,6 +15,5 @@ export class ProductosComponent {
   ngOnInit(){
     AOS.init();
     window.addEventListener('load',AOS.refresh);
-  }
-
+  }  
 }

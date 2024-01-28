@@ -1,17 +1,6 @@
-.container{
-    padding: 4rem;
-}
-
-.col{
-    margin-bottom: 2rem;
-}
-
-.btn{
-    width: 100%;
-}
-
 .contenedor{
     display: flex;
+    min-width: fit-content;
 }
 .card{
     margin:1rem;
@@ -24,11 +13,18 @@
     }
 }
 
-.tituloProductos{
+.container{
+    margin-top: 4rem;
+    font-family: poppins;
+    
+}
+.tituloServicios{
     margin-top: 4rem;
     margin-bottom: 0;
     text-align: center;
     font-family: 'Anton', sans-serif;
     font-size: 64px;
     font-weight: bold;
+   
+    
 }

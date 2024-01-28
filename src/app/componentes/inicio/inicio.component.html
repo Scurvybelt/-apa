@@ -1,4 +1,5 @@
 <app-cabecero></app-cabecero>
+<!--Caruzel-->
 <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -28,45 +29,101 @@
         </div>
       </div>
     </div>
+    
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button id=botonCarusel class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
 </div>
 
+<!--Tabla-->
+
+<!-- <div class="infotab">
+  <table class="table table-hover">
+  <thead>
+      <tr>
+        <th>OrderID</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Region</th>
+        <th>Date</th>
+        <th>Amount</th>
+      </tr>
+  </thead>
+    <tbody *ngFor="let datos of employees; let i = index" (click)="seleccionRow(datos)">
+      <tr>
+        <td>{{datos.OrderID}}</td>
+        <td>{{datos.City}}</td>
+        <td>{{datos.Country}}</td>
+        <td>{{datos.Region}}</td>
+        <td>{{datos.Date}}</td>
+        <td>{{datos.Amount}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<!--Cartas-->
+<h2 class = "tituloTrabajos">Trabajos</h2>
 <div class="container text-center">
-    <div class="row row-cols-2">
-      <div class="col">
-        <img src="../../../assets/img/s1.jpg" class="d-block w-100" alt="...">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis semper feugiat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis semper feugiat.
-        </p>
-        <button class="btn btn-primary" type="button">Button</button>
+ 
+    <div class="row row-cols-2 cartas">
+      <div data-aos="fade-up" class="card col" style="width: 18rem;">
+        <img src="../../../assets/img/s2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-      <div class="col">
-        <img src="../../../assets/img/s1.jpg" class="d-block w-100" alt="...">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis semper feugiat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis semper feugiat.
-        </p>
-        <button class="btn btn-primary" type="button">Button</button>
+
+      <div data-aos="fade-down" class="card col" style="width: 18rem;">
+        <img src="../../../assets/img/s3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-      <div class="col">
-        <img src="../../../assets/img/s1.jpg" class="d-block w-100" alt="...">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis semper feugiat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis semper feugiat.
-        </p>
-        <button class="btn btn-primary" type="button">Button</button>
+
+      <div data-aos="fade-up" class="card col" style="width: 18rem;">
+        <img src="../../../assets/img/s2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-      <div class="col">
-        <img src="../../../assets/img/s1.jpg" class="d-block w-100" alt="...">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis semper feugiat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis semper feugiat.
-        </p>
-        <button class="btn btn-primary" type="button">Button</button>
+
+      <div data-aos="fade-down" class="card col" style="width: 18rem;">
+        <img src="../../../assets/img/s3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" class="card col" style="width: 18rem;">
+        <img src="../../../assets/img/s3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div data-aos="fade-down" class="card col" style="width: 18rem;">
+        <img src="../../../assets/img/s3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
     </div>
 </div>
@@ -74,4 +131,51 @@
 
 
 
+<app-letras-grandes></app-letras-grandes>
+
+<!--Mision-->
+<section class = "hero">
+  <div>
+      <h1 class= tituloMision>Mision</h1>
+  </div>
+  <div class="container">
+    <div data-aos="fade-up" class="hero-content" >
+      <h2>Nuestra Mision</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae nisl ut odio 
+          fringilla aliquet vitae nec lectus. Ut luctus lectus eu lectus ornare, 
+          vel aliquam dolor interdum. Ut sit amet sagittis augue, id efficitur leo. Vivamus id tincidunt ligula. 
+          Nulla nec sapien ut dui cursus ullamcorper nec aliquam dui. Vestibulum tincidunt, quam sit amet elementum pulvinar, 
+          ante purus tempor libero, et condimentum massa leo eu nibh. Nulla sed augue libero. Vestibulum varius nisi dolor,
+          at iaculis velit convallis eu. Sed sagittis, nibh in molestie ultrices, orci velit rhoncus nibh, et pellentesque enim neque ac justo. 
+      </p>
+      <button class="cta-button ">Read More</button>
+    </div>
+      <div data-aos="fade-down" class = "hero-image" >
+          <img src = "../../../assets/img/s1.jpg" alt = "imagen">
+      </div>
+  </div>
+</section>
+
+<!--Vision-->
+<section class = "vision">
+  <div>
+      <h1 class= tituloMision>Vision</h1>
+  </div>
+  <div class="container">
+    <div data-aos="fade-down" data-aos-easing="ease-in-sine" class="hero-content orden">
+      <h2>Nuestra Vision</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae nisl ut odio 
+          fringilla aliquet vitae nec lectus. Ut luctus lectus eu lectus ornare, 
+          vel aliquam dolor interdum. Ut sit amet sagittis augue, id efficitur leo. Vivamus id tincidunt ligula. 
+          Nulla nec sapien ut dui cursus ullamcorper nec aliquam dui. Vestibulum tincidunt, quam sit amet elementum pulvinar, 
+          ante purus tempor libero, et condimentum massa leo eu nibh. Nulla sed augue libero. Vestibulum varius nisi dolor,
+          at iaculis velit convallis eu. Sed sagittis, nibh in molestie ultrices, orci velit rhoncus nibh, et pellentesque enim neque ac justo. 
+      </p>
+      <button class="cta-button" data-aos-easing="ease-in-sine">Read More</button>
+    </div>
+      <div  data-aos="fade-up" class = "hero-image" >
+          <img src = "../../../assets/img/s1.jpg" alt = "imagen">
+      </div>
+  </div>
+</section>
 <app-pie-pagina></app-pie-pagina>

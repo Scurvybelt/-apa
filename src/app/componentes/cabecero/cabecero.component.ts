@@ -21,14 +21,34 @@ import { Component } from '@angular/core';
 export class CabeceroComponent {
   
   subMenu: boolean = false;
-
+  public dark = false;
   constructor(){
+
+  }
+  ngOnInit(){
+    
 
   }
 
   mostrarMenu(){
     this.subMenu = !this.subMenu;
     console.log(this.subMenu);
+  }
+
+  darkMode(){
+    
+    // const storedDarkMode = window.document.getElementById('toggle');
+    // document.body.classList.toggle('dark-theme');
+
+    this.dark = !this.dark;
+    console.log(this.dark);
+    if(this.dark){
+      //pones en dark mode todo
+      
+    }else{
+      //pones en light mode todo
+      
+    }
   }
 }
 
