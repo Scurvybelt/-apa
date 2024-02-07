@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-letras-grandes',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class LetrasGrandesComponent {
 
+  ngOnInit(){
+    AOS.init();
+    window.addEventListener('load',AOS.refresh);
+  }
 }

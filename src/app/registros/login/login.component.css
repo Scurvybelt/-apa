@@ -1,0 +1,9 @@
+.seccion{
+    height: 100%;
+}
+.botones{
+    display: grid;
+}
+.cont{
+    margin-top: 2rem;
+}

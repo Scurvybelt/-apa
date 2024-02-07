@@ -9,6 +9,7 @@
 
 .hero{
     background-color: #f8f8f8df;
+    padding: 1rem;
 }
 
 .heading h1{
@@ -25,12 +26,18 @@
     width: 90%;
     margin: 65px auto;
 }
-
+.tituloNosotros{
+    margin-top: 7rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+}
 .hero-content{
     flex: 1;
     width: 600px;
     margin: 0px 25px;
-    animation: fadeInUp 2s ease;
 }
 .hero-content h2{
     font-size: 38px;
@@ -103,25 +110,7 @@ img{
     .hero-image{
         width:100%;
     } 
-}
-@keyframes fadeInUp {
-    0%{
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes fadeInRight {
-    0%{
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
+    .tituloNosotros{
+        line-height: 3rem;
     }
 }

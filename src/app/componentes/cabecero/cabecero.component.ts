@@ -44,9 +44,10 @@ export class CabeceroComponent {
     console.log(this.dark);
     if(this.dark){
       //pones en dark mode todo
-      
+      document.documentElement.setAttribute('data-theme','dark');
     }else{
       //pones en light mode todo
+      document.documentElement.setAttribute('data-theme','light');
       
     }
   }

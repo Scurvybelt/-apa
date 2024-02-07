@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabeceroComponent } from './componentes/cabecero/cabecero.component';
-import { LoginComponent } from './componentes/login/login.component';
+import { LoginComponent } from './registros/login/login.component';
 import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.component';
 import { NoEncontradoComponent } from './componentes/no-encontrado/no-encontrado.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
@@ -17,6 +17,10 @@ import { ServiciosComponent } from './componentes/servicios/servicios.component'
 import { LetrasGrandesComponent } from './componentes/letras-grandes/letras-grandes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { CrearCuentaComponent } from './registros/crear-cuenta/crear-cuenta.component';
+import { TimeLineComponent } from './componentes/time-line/time-line.component';
+import { HoraComponent } from './componentes/hora/hora.component';
+import { PagosComponent } from './componentes/pagos/pagos.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,10 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     NosotrosComponent,
     ServiciosComponent,
     LetrasGrandesComponent,
+    CrearCuentaComponent,
+    TimeLineComponent,
+    HoraComponent,
+    PagosComponent,
   ],
   imports: [
     DxButtonModule,

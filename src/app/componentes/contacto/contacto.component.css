@@ -28,11 +28,11 @@
 }
 .titulo{
     margin-top: 7rem;
-    box-sizing: border-box;
     font-family: "Arial", sans-serif;
     text-align: center;
-    font-size: xx-large;
+    font-size: 64px;
     font-weight: bold;
+    margin-bottom: 0;
 }
 .formulario{
     border: 3px solid #2d2d2d;

@@ -2,9 +2,6 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import AOS from 'aos';
 
 
-
-
-
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -12,6 +9,7 @@ import AOS from 'aos';
 })
 export class InicioComponent {
   public botonCarusel:any;
+  isVisible = false;
 
   employees: any[] = [
     {
@@ -99,6 +97,7 @@ export class InicioComponent {
   }
 
   ngOnInit(){
+
     //animaciones
    AOS.init();
    window.addEventListener('load',AOS.refresh);
@@ -109,6 +108,8 @@ export class InicioComponent {
    },9000);
    
   }
+
+  
 
   // seleccionRow(e:any){//Muestra la fila que le des click
   //   console.log(e);

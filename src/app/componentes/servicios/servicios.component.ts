@@ -13,6 +13,7 @@ export class ServiciosComponent {
   }
 
   ngOnInit(){
+    window.scrollTo(0, 0);
     AOS.init();
     window.addEventListener('load',AOS.refresh);
   }  

@@ -5,12 +5,18 @@
     font-weight: 800;
     text-transform: uppercase;
 }
+.tituloNav{
+    font-size: 29px;
+    margin: 0;
+    margin-top: 1rem;
+}
 
 .lateral{
     width: 43%;
 }
-
-
+.switch{
+    margin: 0;
+}
 a.navbar-brand{
     margin: 0;
     padding:0.3em;

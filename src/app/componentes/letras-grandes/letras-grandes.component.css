@@ -24,6 +24,7 @@ body {
 	text-transform: uppercase;
 	font-size: 200px;
 	font-weight: bold;
+	line-height: 250px;
 
 	background-image: url('./../../../assets/img/s2.jpg');
 	background-size: cover;

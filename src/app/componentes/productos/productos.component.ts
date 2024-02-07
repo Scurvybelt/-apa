@@ -15,6 +15,7 @@ export class ProductosComponent {
   ngOnInit(){
     AOS.init();
     window.addEventListener('load',AOS.refresh);
+    window.scrollTo(0, 0);
   }
 
 }

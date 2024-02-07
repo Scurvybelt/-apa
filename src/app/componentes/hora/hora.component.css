@@ -1,0 +1,34 @@
+
+/*Hora*/
+
+
+.centered{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+    color: #fdb997;
+    margin: 0;
+    font-family: 'impact',cursive;
+    font-weight: normal;
+    
+}
+
+.bg{background-image: url(../../../assets/img/desiertoConFondo.jpg);}
+.fg{background-image: url(../../../assets/img/desiertoSinFondo.png);}
+
+.bg, .fg{
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .centered{
+        font-size: 10rem;
+    }
+    
+}

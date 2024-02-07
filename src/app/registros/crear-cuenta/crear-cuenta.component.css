@@ -1,0 +1,10 @@
+.formulario{
+    justify-content: center;
+   
+}
+.seccion{
+    height: 100%;
+}
+.botones{
+    display: grid;
+}
