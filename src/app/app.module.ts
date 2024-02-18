@@ -13,7 +13,7 @@ import { DxButtonModule, DxCheckBoxModule, DxDataGridModule, DxDropDownButtonMod
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
-import { ServiciosComponent } from './componentes/servicios/servicios.component';
+
 import { LetrasGrandesComponent } from './componentes/letras-grandes/letras-grandes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
@@ -21,6 +21,8 @@ import { CrearCuentaComponent } from './registros/crear-cuenta/crear-cuenta.comp
 import { TimeLineComponent } from './componentes/time-line/time-line.component';
 import { HoraComponent } from './componentes/hora/hora.component';
 import { PagosComponent } from './componentes/pagos/pagos.component';
+import { PagoComponent } from './componentes/pago/pago.component';
+import { ServiciosComponent } from './componentes/servicios/servicios.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { PagosComponent } from './componentes/pagos/pagos.component';
     TimeLineComponent,
     HoraComponent,
     PagosComponent,
+    PagoComponent,
   ],
   imports: [
     DxButtonModule,

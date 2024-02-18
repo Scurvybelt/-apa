@@ -10,6 +10,7 @@ import { ServiciosComponent } from './componentes/servicios/servicios.component'
 import { CrearCuentaComponent } from './registros/crear-cuenta/crear-cuenta.component';
 import { TimeLineComponent } from './componentes/time-line/time-line.component';
 import { HoraComponent } from './componentes/hora/hora.component';
+import { PagoComponent } from './componentes/pago/pago.component';
 
 const routes: Routes = [
   {path:'',component:InicioComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:'crearCuenta',component:CrearCuentaComponent},
   {path:'historia',component:TimeLineComponent},
   {path:'hora', component: HoraComponent},
+  {path: 'pagos', component:PagoComponent},
   {path: '**',component: NoEncontradoComponent}
 ];
 
