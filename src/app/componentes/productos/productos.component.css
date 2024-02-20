@@ -5,13 +5,29 @@
 .col{
     margin-bottom: 2rem;
 }
+.btn-primary{
+    background-color: rgba(165, 42, 42, 0.846);
+    border: 1px solid black;
+    transition: transform 0.3s ease;
+}
+.btn-primary:hover{
+    background-color: rgba(165, 42, 42, 1.2);
+    transform: scale(1.02);
+}
 
 .btn{
     width: 100%;
 }
+.tiuloPro{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+}
 
 .contenedor{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .card{
     margin:1rem;
@@ -23,12 +39,18 @@
         display: block;
     }
 }
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 .tituloProductos{
-    margin-top: 7rem;
+    margin-top: 10rem;
     margin-bottom: 0;
     text-align: center;
-    font-family: 'Anton', sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-size: 64px;
     font-weight: bold;
 }

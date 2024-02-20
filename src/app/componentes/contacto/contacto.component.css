@@ -27,15 +27,11 @@
     text-align: center;
 }
 .titulo{
-    margin-top: 7rem;
-    font-family: "Arial", sans-serif;
+    margin-top: 10rem;
+    font-family: "Century Gothic", sans-serif;
     text-align: center;
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 0;
 }
-.formulario{
-    border: 3px solid #2d2d2d;
-    margin: 3rem;
-    border-radius: 1rem;
-}
+

@@ -99,6 +99,8 @@ tbody{
     transform: scale(1.1);
 }
 
+
+
 .hero-image{
     flex:1;
     width:600px;
@@ -161,6 +163,7 @@ img{
 /*Texto Type css*/
 .typeLetras{
     text-align: center;
+    margin-top: 1rem;
 }
 @media screen and (max-width: 1185px){
     .text{

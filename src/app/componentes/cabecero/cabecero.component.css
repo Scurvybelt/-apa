@@ -1,14 +1,22 @@
-
-.logo{
-    font-size: 24px;
-    color: #15A4F9;
-    font-weight: 800;
-    text-transform: uppercase;
+.container-fluid{
+    justify-content: space-evenly;
 }
+
 .tituloNav{
     font-size: 29px;
     margin: 0;
     margin-top: 1rem;
+    font-size: bold;
+    font-family: "Cedarville Cursive", cursive;
+}
+.nav-link{
+    font-size: 20px;
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 500;
+
+}
+.tituloLili{
+    display: none;
 }
 
 .lateral{
@@ -17,25 +25,45 @@
 .switch{
     margin: 0;
 }
+
 a.navbar-brand{
     margin: 0;
     padding:0.3em;
     font-weight: 538;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    font-family:"Century Gothic", sans-serif;
     border-radius: 5px;
+    color: black;
+}
+.logoImagen:hover{
+    cursor: pointer;
 }
 
 a.navbar-brand:hover{
     background-color: #1e2321;
-    box-shadow: 0px 0px 4px #898282;/*inset se refiere que dentro de la caja */
+    box-shadow: 0px 0px 4px #131212;/*inset se refiere que dentro de la caja */
     color: white;
     transition: all 200ms;
 }
+.logoImagen{
+    width: 80px;
+    height: 80px;
+}
 
 
-@media (max-width: 765px){
+@media (max-width: 851px){
     .navbar-brand{
         display: none;
+    }
+    .container-fluid{
+        justify-content: space-between;
+    }
+    .tituloLili{
+        margin-bottom: 0;
+        display: block;
+        font-family: "Cedarville Cursive", cursive;
+        font-weight: 400;
+        font-style: normal;
     }
     
 }

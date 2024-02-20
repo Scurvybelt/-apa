@@ -11,14 +11,6 @@
     background-color: #f8f8f8df;
     padding: 1rem;
 }
-
-.heading h1{
-    color: #ff6347; 
-    font-size: 55px;
-    text-align: center;
-    margin-top: 35px;
-}
-
 .container{
     display: flex;
     justify-content: center;
@@ -30,7 +22,7 @@
     margin-top: 7rem;
     margin-bottom: 0;
     text-align: center;
-    font-family: 'Anton', sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-size: 64px;
     font-weight: bold;
 }
@@ -52,7 +44,8 @@
 }
 .hero-content button{
     display: inline-block;
-    background-color: #ff4500;
+    /* background-color: #4c3d38; */
+    background-color: rgb(255, 0, 0);
     color: #fff;
     padding: 12px 24px;
     border-radius: 5px;
@@ -62,11 +55,12 @@
     transition: 0.3s ease;
 }
 .hero-content button:hover{
-    background-color: #ff6347;
+    background-color: #ff4423;
     transform: scale(1.1);
 }
 
 .hero-image{
+    border: 4px solid black;
     flex:1;
     width:600px;
     margin:auto;
@@ -76,7 +70,7 @@
 img{
     width:100%;
     height: auto;
-    border-radius: 10px;
+   
 }
 @media screen and (max-width: 768px){
     .heading h1{
@@ -93,6 +87,7 @@ img{
         padding: 0px 40px;
     }
     .hero-content{
+        order: 2;
         width:100%;
         margin:35px 0px;
     }
@@ -109,6 +104,8 @@ img{
     }
     .hero-image{
         width:100%;
+        margin-top: 1rem;
+        border: 4px solid black;
     } 
     .tituloNosotros{
         line-height: 3rem;
