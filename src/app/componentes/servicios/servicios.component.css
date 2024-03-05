@@ -1,12 +1,31 @@
 .contenedor{
-    display: flex;
+    display: block;
     min-width: fit-content;
 }
 .card{
     margin:1rem;
     width: auto;
+    border-radius: 0px;
+    border: 3px solid #000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.card-right{
+    border-left: 3px solid;
+}
+.card-left{
+    border-right: 3px solid;
+}
+@media screen and (max-width: 768px) {
+    .card-right{
+        border-top: 3px solid;
+        border-left: 0px;
+    }
+    .card-left{
+        border-bottom: 3px solid;
+        border-right: 0px;
+    }
+}
 @media screen and (max-width: 768px) {
     .contenedor{
         display: block;
@@ -19,13 +38,20 @@
     font-family: poppins;
     
 }
+.conenidoCurso{
+    display: flex;
+    align-items: center;
+}
 .tituloServicios{
-    margin-top: 7rem;
+    margin-top: 9rem;
     margin-bottom: 0;
     text-align: center;
     font-family: "Century Gothic", sans-serif;
     font-size: 64px;
     font-weight: bold;
-   
-    
+}
+
+.card-title{
+    font-family: "Century Gothic", sans-serif;
+    font-weight: bold;
 }

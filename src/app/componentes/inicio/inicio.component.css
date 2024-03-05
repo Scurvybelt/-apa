@@ -1,6 +1,72 @@
 .btn-primary{
     width: 100%;
 }
+.contenedor{
+    display: grid;
+    justify-items: center;
+    padding: 1.5rem;
+}
+/*Cartas dialogos*/
+.tituloCartasQuotes{
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+}
+.contenedorCards{
+    padding: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+.cartaDialogo{
+    /* border: 3px solid;
+    border-radius: 0; */
+    transition: all 0.3s ease; 
+}
+.cartaDialogo:hover{
+    transform: scale(1.0.5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media  screen and (max-width: 1200px) {
+    .contenedorCards{
+        display: block;
+        margin-bottom: 0rem;
+    }
+    .cartaDialogo{
+        margin-bottom: 2rem;
+    }
+}
+ 
+@media screen and (min-width: 1200px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+}
+.cartaLogoLuz{
+    margin: 2rem;
+    border-radius: 0px;
+    border: 3px solid #000;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.imagenCard{
+    border-radius: 0px;
+    border: 2px solid #000000;
+}
+.tituloCartas{
+    font-family: "Century Gothic", sans-serif;
+    font-weight: bold;
+}
 
 .container{
     padding-top: 2rem;
@@ -165,11 +231,17 @@ img{
     text-align: center;
     margin-top: 1rem;
 }
+
 @media screen and (max-width: 1185px){
     .text{
         display: none;
     }
     
+}
+@media screen and (max-width: 520px){
+    .carousel{
+        margin-top: 3rem;
+    }
 }
 
 .contenedorType{

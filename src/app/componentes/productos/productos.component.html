@@ -1,54 +1,16 @@
 <app-cabecero></app-cabecero>
-<h2 id = "producto" data-aos-duration="1000" data-aos="fade-right" class=" tituloProductos" >Productos</h2>
+<h2 id = "producto" data-aos-duration="1000" data-aos="fade-down" class=" tituloProductos" >Productos</h2>
     <div class="container text-center contenedor">
-        <div data-aos="fade-up" data-aos-duration="1000" class="card col">
-            <img src="../../../assets/img/galletas.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title tiuloPro">Galletas de Nuez</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div data-aos="fade-down" data-aos-duration="1000" class="card col">
-            <img src="../../../assets/img/masPanes.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title tiuloPro">Panes</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="card col">
-            <img src="../../../assets/img/galletasEnv.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title tiuloPro">Galletas Domicilio</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div data-aos="fade-down" data-aos-duration="1000" class="card col">
-            <img src="../../../assets/img/panesBolita.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title tiuloPro">Panes bolita</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="card col">
-            <img src="../../../assets/img/fresas.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title tiuloPro">Fresas</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div data-aos="fade-down" data-aos-duration="1000" class="card col">
-            <img src="../../../assets/img/panesFrente.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title tiuloPro">Frascos Galletas</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div *ngFor = "let producto of productos; let i = index">
+            <div [attr.data-aos]="i % 2 == 0 ? 'fade-up' : 'fade-down'" data-aos-duration="1000" class="card col">
+                <img [src]="producto.imagen" class="card-img-top" alt="{{producto.nombre}}">
+                <div class="card-body">
+                    <h5 class="card-title tiuloPro">{{producto.nombre}}</h5>
+                    <p class="card-text">{{producto.descripcion}}</p>
+                    <a  class="btn btn-primary" (click) = "agregarCarrito(productos)">Agregar al Carrito</a>
+                </div>
+                    
             </div>
         </div>
     </div>
-    
 <app-pie-pagina></app-pie-pagina>

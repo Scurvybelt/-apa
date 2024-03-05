@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PagosService } from 'src/app/services/pagos/pagos.service';
+import { ProductosComponent } from '../productos/productos.component';
 
 @Component({
   selector: 'app-pago',
@@ -8,7 +9,7 @@ import { PagosService } from 'src/app/services/pagos/pagos.service';
 })
 export class PagoComponent {
 
-  constructor(private pagoService: PagosService){
+  constructor(private pagoService: PagosService, private productosService: ProductosComponent){
 
   }
 
@@ -24,6 +25,7 @@ export class PagoComponent {
     });
     
   }
-
+  
+  
   
 }

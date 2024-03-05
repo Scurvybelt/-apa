@@ -2,6 +2,10 @@
     justify-content: space-evenly;
 }
 
+.botonCompras{
+    padding: 10px;
+}
+
 .tituloNav{
     font-size: 29px;
     margin: 0;
@@ -24,6 +28,22 @@
 }
 .switch{
     margin: 0;
+}
+.redesSoc{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: aliceblue;
+    
+}
+.fa-brands{
+    cursor: pointer;
+}
+.fa-brands:hover{
+    color: #1e2321;
+    transition: all 200ms;
+    transform: scale(1.2);
+    transition: all 200ms;
 }
 
 a.navbar-brand{

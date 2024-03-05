@@ -5,16 +5,35 @@
       <img class = "img-fluid logoImagen"src="assets/img/logoÑapa.png" width="80px" height="80px" routerLink="/" alt="Logo" >
       <h1 class ="tituloLili">Lili de Mina</h1>
       <!-- <a href = "#" class="logo">Logo</a> -->
-      <a class="navbar-brand" routerLink="/servicios">Servicios</a>
       <a class="navbar-brand" routerLink="/productos">Productos</a>
+      <a class="navbar-brand" routerLink="/servicios">Cursos</a>
+      
       <a class="navbar-brand" routerLink="/contacto" >Contacto</a>
       <a class="navbar-brand" routerLink="/nosotros">Nosotros</a>
       <a class="navbar-brand" routerLink="/historia">Historia</a>
-      <a class="navbar-brand" routerLink="/pagos">Pagos</a>
-      
+
+      <button class="navbar-toggler botonCompras" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+        <a  ><i class="fa-solid fa-bag-shopping"></i></a><!--routerLink="/pagos"-->
+      </button>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
+
+      <div class="lateral offcanvas offcanvas-end " tabindex="-1" id="offcanvas" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="assets/img/logoÑapa.png" width="60px" height="60px" alt="Logo" class="logo">
+          <h5 class="offcanvas-title tituloNav" id="offcanvasDarkNavbarLabel">Ñapa</h5>
+          <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <app-pago></app-pago>
+        </div>
+
+      </div>
+
+      
 
       <div class="lateral offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
@@ -24,12 +43,13 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link fw-bold" href="servicios">Servicios</a>
-            </li>
             <li class="nav-item ">
-              <a class="nav-link fw-bold" href="#">Productos</a>
+              <a class="nav-link fw-bold" href="/productos">Productos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="servicios">Cursos</a>
+            </li>
+            
             <li class="nav-item ">
               <a class="nav-link fw-bold" href="/contacto">Contacto</a>
             </li>
@@ -40,17 +60,21 @@
               <a class="nav-link fw-bold" href="/historia">Historia</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link fw-bold" href="/inicio">Pagos</a>
-            </li>
-            <li class="nav-item ">
               <a class="nav-link fw-bold" href="/hora">Hora</a>
             </li>
-            
+            <li class="nav-item ">
+              <a class="nav-link fw-bold" href="/pagos"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
             <mat-slide-toggle id= "toggle" (click)="darkMode()"><p class="switch nav-link fw-bold">Dark Mode</p></mat-slide-toggle> 
-            
-            
           </ul>
         </div>
+        <div class = "redesSoc">
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          <i class="fa-brands fa-tiktok fa-2xl"></i>
+          <i class="fa-brands fa-youtube fa-2xl"></i>
+        </div>
+        
+
       </div>
 
     </div>
