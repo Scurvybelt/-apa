@@ -23,6 +23,7 @@ import { HoraComponent } from './componentes/hora/hora.component';
 import { PagosComponent } from './componentes/pagos/pagos.component';
 import { PagoComponent } from './componentes/pago/pago.component';
 import { ServiciosComponent } from './componentes/servicios/servicios.component';
+import { CursoDetalladoComponent } from './componentes/servicios/vistaCurso/curso-detallado/curso-detallado.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ServiciosComponent } from './componentes/servicios/servicios.component'
     HoraComponent,
     PagosComponent,
     PagoComponent,
+    CursoDetalladoComponent,
   ],
   imports: [
     DxButtonModule,

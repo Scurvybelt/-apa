@@ -1,5 +1,5 @@
 
-<nav class="navbar fixed-top" style="background-color: aliceblue; height: 6rem;">
+<nav class="navbar fixed-top" style="background-color: aliceblue; height: 6rem; ">
     <div class="container-fluid">
 
       <img class = "img-fluid logoImagen"src="assets/img/logoÑapa.png" width="80px" height="80px" routerLink="/" alt="Logo" >
@@ -13,7 +13,7 @@
       <a class="navbar-brand" routerLink="/historia">Historia</a>
 
       <button class="navbar-toggler botonCompras" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
-        <a  ><i class="fa-solid fa-bag-shopping"></i></a><!--routerLink="/pagos"-->
+        <a ><i class="fa-solid fa-bag-shopping"></i></a><!--routerLink="/pagos"-->
       </button>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -64,6 +64,9 @@
             </li>
             <li class="nav-item ">
               <a class="nav-link fw-bold" href="/pagos"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link fw-bold" href="/login">Inicia Sesion</a>
             </li>
             <mat-slide-toggle id= "toggle" (click)="darkMode()"><p class="switch nav-link fw-bold">Dark Mode</p></mat-slide-toggle> 
           </ul>

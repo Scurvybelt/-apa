@@ -1,6 +1,40 @@
 .container{
     padding: 4rem;
 }
+/* */
+.contadores{
+    display: flex;
+    justify-content: center;
+    height: 38px;
+    
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+.contadores span{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+.contadores span:hover{
+    cursor: pointer;
+}
+.num{
+    font-size: 20px;
+    font-weight: 600;
+    border-left: 2px solid rgb(0,0,0,0.2);
+    border-right: 2px solid rgb(0,0,0,0.2);
+    padding-right: 2rem;
+    padding-left: 2rem;
+    pointer-events: none;
+}
+
 
 .col{
     margin-bottom: 2rem;

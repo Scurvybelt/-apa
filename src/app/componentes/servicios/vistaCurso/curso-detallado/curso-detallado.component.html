@@ -1,0 +1,28 @@
+<app-cabecero></app-cabecero>
+<div class = "contenido">
+    <h1 class = "titulo">{{curso.nombre}}</h1>
+    <div class="card" style="width: 18rem;">
+        <img [src]="curso.imagen" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">{{curso.nombre}}</h5>
+        <p class="card-text">{{curso.descripcion}}</p>
+        <a class="btn btn-primary" (click)="agregarCarritoCompra(curso)">Agregar Al Carrito</a>
+        </div>
+    </div>
+    <!-- <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="curso.imagen" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{curso.nombre}}</h5>
+              <p class="card-text">{{curso.descripcion}}</p>
+              <a class="btn btn-primary" (click)="agregarCarritoCompra(curso)">Agregar Al Carrito</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+</div>
+
+<app-pie-pagina></app-pie-pagina>

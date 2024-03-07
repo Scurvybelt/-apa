@@ -1,19 +1,63 @@
-
-
-<button  type="button" class="btn btn-primary"(click) = realizarPago()>
-    <span>Realizar Pago </span>
-    <i class="fa fa-credit-card"></i>
-</button>
-<!-- <div >
+<!-- 
+<div *ngFor = "let producto of productos">
+    
     <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+        <img [src]="producto.imagen" class="card-img-top" alt="producto.nombre">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">{{producto.nombre}}</h5>
+          <p class="card-text">{{producto.descripcion}}</p>
+          <a href="#" class="btn btn-primary">Quitar del Carrito</a>
+        </div>
+      </div>
+</div> -->
+<h3 class = "tituloCarrito">Carrito</h3>
+<div *ngFor = "let producto of productos; let i = index">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+        <div class="col-md-4">
+            <img [src]="producto.imagen" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+            <h5 class="card-title">{{producto.nombre}}</h5>
+            <p class="card-text">{{producto.descripcion}}</p>
+            <p class="card-text">{{producto.count}}</p>
+            <a  class="btn btn-primary" (click)="quitarArticulo(producto, i, 'producto');">Quitar del Carrito</a>
+            </div>
+        </div>
         </div>
     </div>
-</div> -->
+</div>
+
+<div *ngFor = "let curso of cursos; let i = index">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+        <div class="col-md-4">
+            <img [src]="curso.imagen" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+            <h5 class="card-title">{{curso.nombre}}</h5>
+            <p class="card-text">{{curso.descripcion}}</p>
+            <a  class="btn btn-primary" (click)="quitarArticulo(curso, i, 'curso');">Quitar del Carrito</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <button *ngIf="productos.length > 0 || cursos.length > 0" type="button" class="btn btn-primary"(click) = realizarPago()>
+        <span>Realizar Pago </span>
+        <i class="fa fa-credit-card"></i>
+    </button>
+    
+    <p>Total: {{total}}</p>
+</div>
+
+
+
 
 
 

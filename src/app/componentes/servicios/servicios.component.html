@@ -1,73 +1,22 @@
 <app-cabecero></app-cabecero>
 <h2 id="servicios" data-aos-duration="1000" data-aos="fade-down" class=" tituloServicios">Cursos</h2>
-<div class="container text-center contenedor">
-
-  <div data-aos="fade-right" class="card mb-3">
+<div *ngFor="let curso of cursos; let i = index" class="container text-center contenedor">
+  <div  [attr.data-aos]="i % 2 == 0 ? 'fade-right' : 'fade-left'" data-aos-duration="1000" class="card mb-3">
     <div class="row g-0">
       <div class="col-md-8 conenidoCurso conenidoCurso">
         <div class="card-body">
-          <h2 class="card-title">Curso de Pasteles</h2>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <button type="button" class="btn btn-danger">Apartar Lugar</button>
+          <h2 class="card-title">{{curso.nombre}}</h2>
+          <p class="card-text">{{curso.descripcion}}</p>
+          <button type="button" class="btn btn-danger" (click)="comprarCurso(curso)">Apartar Lugar</button>
         </div>
       </div>
       <div class="col-md-4">
-        <img src="../../../assets/img/FotoLuzÑapa.jpg" class="img-fluid card-right" alt="...">
+        <img [src] = "curso.imagen" class="img-fluid card-right" alt="curso.nombre">
       </div>
     </div>
   </div>
 
   <img data-aos="zoom-in" src="../../../assets/img/imagenLineaContinua.webp" style="width: 142px;" alt="imagenLineaContinua">
-
-  <div data-aos="fade-right" class="card mb-3">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="../../../assets/img/FotoLuzÑapa.jpg" class="img-fluid card-left" alt="...">
-      </div>
-      <div class="col-md-8 conenidoCurso ">
-        <div class="card-body">
-          <h2 class="card-title">Curso de Pan</h2>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <button type="button" class="btn btn-danger">Apartar Lugar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <img data-aos="zoom-in" src="../../../assets/img/imagenLineaContinua.webp" style="width: 142px;" alt="imagenLineaContinua">
-
-  <div  data-aos="fade-right" class="card mb-3">
-    <div class="row g-0">
-      <div class="col-md-8 conenidoCurso">
-        <div class="card-body">
-          <h2 class="card-title">Curso Decoracion</h2>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <button type="button" class="btn btn-danger">Apartar Lugar</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img src="../../../assets/img/FotoLuzÑapa.jpg" class="img-fluid card-right" alt="...">
-      </div>
-    </div>
-  </div>
-
-  <img data-aos="zoom-in" src="../../../assets/img/imagenLineaContinua.webp" style="width: 142px;" alt="imagenLineaContinua">
-
-  <div data-aos="fade-right" class="card mb-3">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="../../../assets/img/FotoLuzÑapa.jpg" class="img-fluid card-left" alt="...">
-      </div>
-      <div class="col-md-8 conenidoCurso">
-        <div class="card-body">
-          <h2 class="card-title">Curso Sopas</h2>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <button type="button" class="btn btn-danger">Apartar Lugar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </div>
 
 <app-pie-pagina></app-pie-pagina>

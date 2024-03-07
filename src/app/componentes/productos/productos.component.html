@@ -1,5 +1,5 @@
 <app-cabecero></app-cabecero>
-<h2 id = "producto" data-aos-duration="1000" data-aos="fade-down" class=" tituloProductos" >Productos</h2>
+    <h2 id = "producto" data-aos-duration="1000" data-aos="fade-down" class=" tituloProductos" >Productos</h2>
     <div class="container text-center contenedor">
         <div *ngFor = "let producto of productos; let i = index">
             <div [attr.data-aos]="i % 2 == 0 ? 'fade-up' : 'fade-down'" data-aos-duration="1000" class="card col">
@@ -7,10 +7,15 @@
                 <div class="card-body">
                     <h5 class="card-title tiuloPro">{{producto.nombre}}</h5>
                     <p class="card-text">{{producto.descripcion}}</p>
-                    <a  class="btn btn-primary" (click) = "agregarCarrito(productos)">Agregar al Carrito</a>
+                    <a  class="btn btn-primary" (click) = "agregarCarrito(producto)">Agregar al Carrito</a>
                 </div>
-                    
+                <div class = "contadores">
+                    <span class = "minus noselect"(click)="counter(producto.id,'minus')">-</span>
+                    <p class = "num">{{producto.count}}</p>
+                    <span class = "plus noselect"(click)="counter(producto.id,'add')">+</span>
+                </div>
             </div>
+            
         </div>
     </div>
 <app-pie-pagina></app-pie-pagina>
